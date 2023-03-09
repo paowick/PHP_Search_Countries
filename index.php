@@ -28,6 +28,7 @@
                 $allDocTextCountry[] = $temp;
             }
         }
+        sort($allCountry);
         if (count($allCountry) > 0) {
             $str = implode('<br>', $allCountry);
             echo "$str";
@@ -49,6 +50,7 @@
                 $allDocTextCountry[] = $temp;
             }
         }
+        sort($allCountry);
         if (count($allCountry) > 0) {
             $str = implode('<br>', $allCountry);
             echo "$str";
@@ -70,6 +72,7 @@
                 $allDocTextCountry[] = $temp;
             }
         }
+        sort($allCountry);
         if (count($allCountry) > 0) {
             $str = implode('<br>', $allCountry);
             echo "$str";
@@ -88,6 +91,7 @@
             }
         }
     }
+    sort($allDocTextCountry);
     foreach($allDocTextCountry as $textFinal){
         if($textFinal == ''){continue;}
         echo "$textFinal<br>";
